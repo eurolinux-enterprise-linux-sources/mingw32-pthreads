@@ -9,7 +9,7 @@
 
 Name:           mingw32-pthreads
 Version:        2.8.0
-Release:        10%{?dist}.6
+Release:        10%{?dist}.7
 Summary:        MinGW pthread library
 
 %define crazy_version %(echo %{version}|tr . -)
@@ -115,6 +115,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Adjusted version and rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
 * Mon Dec 27 2010 Andrew Beekhof <abeekhof@redhat.com> - 2.8.0-10.6
 - Rebuild everything with gcc-4.4
   Related: rhbz#658833
